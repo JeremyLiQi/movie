@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script>
+	//自执行函数
+	// (function(){
+	// 	var a =10;
+	// 	alert("hello");
+	// }())
+    // var say = function(){
+    // 	alert("hello");
+    // }
+    var num =1;
+    function outer(){
+    	alert(num);
+    	var num = 10;
+
+    	function inner(){
+    		alert(num);
+    	}
+    	alert(num);
+    	inner();
+    }
+    outer();
+</script>
+</body>
+</html>
